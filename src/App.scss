@@ -1,11 +1,16 @@
-.App{
-    padding-top: 60px;
-    
-}
-
-.navbar{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
+:root {
+    --primary: #752157;
+    --primary-dark: #661c4b;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f8fafc;
+  }
+  
+  
