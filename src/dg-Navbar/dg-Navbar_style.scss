@@ -4,7 +4,7 @@
   }
   
   .navbar {
-    background: rgba(26, 25, 25, 0.8);
+    background: #752157;
     position: fixed;
     width: 100vw;
     color: white;
@@ -45,7 +45,7 @@
   
     @media (max-width: 992px) {
       backdrop-filter: blur(20px);
-      background: rgba(26, 25, 25, 0.9);
+      background: #752157;
   
       .navbar-container {
         display: block;
@@ -104,7 +104,7 @@
   
         .menu-items {
           padding-block: 70px;
-          background: rgba(26, 25, 25, 0.9);
+          background: #611445;
           height: 100vh;
           width: 100vw !important;
           transform: translate(150%);
