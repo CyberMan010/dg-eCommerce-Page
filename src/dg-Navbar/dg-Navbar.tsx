@@ -13,6 +13,11 @@ export const DgNavbar = () => {
       <div className="navbar__top">
         <div className="navbar__container">
           <div className="navbar__start">
+            {/* Mobile Menu Button */}
+            <button className="navbar__mobile-toggle" onClick={handleMenuToggle}>
+              <img src="/category-2.svg" alt="Menu" />
+            </button>
+
             <div className="navbar__logo">
               <img src="/Logo.svg" alt="Safeer Logo" />
             </div>
@@ -80,7 +85,7 @@ export const DgNavbar = () => {
       <nav className="navbar__bottom">
         <div className="navbar__container">
           <button className="navbar__categories">
-            <img src="/category-2.svg"  />
+            <img src="/category-2.svg" />
             <span>All Categories</span>
             <img src="/arrow-down (1).svg" alt="Arrow down" />
           </button>
@@ -97,16 +102,21 @@ export const DgNavbar = () => {
         </div>
       </nav>
 
-      {/* Mobile menu toggle */}
-      <div className="navbar__mobile-toggle">
-        <input type="checkbox" checked={menuOpen} onChange={handleMenuToggle} id="menu-toggle" />
-        <label htmlFor="menu-toggle" className="hamburger-lines">
-          <span className="line line1"></span>
-          <span className="line line2"></span>
-          <span className="line line3"></span>
-        </label>
+      {/* Mobile menu */}
+      <div className={`navbar__mobile-menu ${menuOpen ? "active" : ""}`}>
+        <button className="navbar__mobile-close" onClick={handleMenuToggle}>
+          ✖ Close
+        </button>
+        <div className="navbar__mobile-links">
+          <a href="#">Today's Deals</a>
+          <a href="#">Brand Store</a>
+          <a href="#">Electronics</a>
+          <a href="#">Home & Kitchen</a>
+          <a href="#">Fashion</a>
+          <a href="#">Baby & Toys</a>
+          <a href="#">Beauty Care</a>
+        </div>
       </div>
     </header>
   )
 }
-
