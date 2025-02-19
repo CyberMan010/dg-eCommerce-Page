@@ -1,7 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { DgNavbar } from './dg-Navbar/dg-Navbar'
 import './App.scss';
-import { Testing } from "./testing";
+import { DgCarousel } from "./dg-Carousel/dg-Carousel";
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
     <Router>
     <div className="App">
       <DgNavbar />
+    <DgCarousel />
     </div>
   </Router>
   )

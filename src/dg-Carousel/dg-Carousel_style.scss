@@ -1,6 +1,136 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-}
+.carousel {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 357.01px;
+    background-image: url('/Rectangle 6.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    &__content {
+      position: relative;
+      height: 100%;
+      max-width: 1920px;
+      margin: 0 auto;
+    }
+  
+    &__text {
+      position: absolute;
+      width: 498px;
+      left: 312px;
+      top: 91.24px;
+      bottom: 91.9px;
+  
+      h1 {
+        font-family: 'Almarai', sans-serif;
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+        color: #752157;
+        font-family: Almarai;
+font-weight: 400;
+font-size: 36px;
+line-height: 40px;
+letter-spacing: 0%;
+
+  
+        span {
+          color: #752157;
+          font-weight: 700;
+        }
+      }
+  
+      p {
+        font-family: 'Almarai', sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #666;
+        margin-bottom: 26.44px;
+        max-width: 440px;
+      }
+      
+    }
+  
+    &__button {
+      width: 180px;
+      height: 29.75px;
+      background: transparent;
+      border: 1px solid #752157;
+      color: #752157;
+      border-radius: 4px;
+      font-family: 'Almarai', sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        background: #752157;
+        color: white;
+      }
+    }
+  
+    &__arrow {
+      position: absolute;
+      top: 153px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      z-index: 2;
+  
+      img {
+        width: 54px;
+        height: 54px;
+      }
+  
+      &--left {
+        left: 205px;
+      }
+  
+      &--right {
+        right: 205px;
+      }
+    }
+  
+    @media (max-width: 1440px) {
+      &__text {
+        left: 160px;
+      }
+  
+      &__arrow {
+        &--left {
+          left: 100px;
+        }
+  
+        &--right {
+          right: 100px;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      height: 300px;
+  
+      &__text {
+        left: 40px;
+        width: 80%;
+        
+        h1 {
+          font-size: 28px;
+        }
+      }
+  
+      &__arrow {
+        &--left {
+          left: 20px;
+        }
+  
+        &--right {
+          right: 20px;
+        }
+      }
+    }
+  }
+  
+  
