@@ -12,7 +12,6 @@ export const DgCarousel = () => {
           <div className="carousel__text">
             <h1>
               <span className="primary-text">Discover</span> A Range Of Products
-              <br />
               For <span className="primary-text">Gaming Professionals</span>
             </h1>
             <p>
