@@ -86,7 +86,7 @@ export const DgNavbar = () => {
         <div className="navbar__container">
           <button className="navbar__categories">
             <img src="/category-2.svg" />
-            <span>All Categories</span>
+            <p>All Categories</p>
             <img src="/arrow-down (1).svg" alt="Arrow down" />
           </button>
 
