@@ -63,34 +63,42 @@ export const DgNavbar = () => {
 
         {/* New bottom navbar section */}
         <div className="navbar__bottom">
-          <div className="navbar__category-button">
-            <img src="/category-2.svg" alt="Categories" className="navbar__category-icon" />
-            <span className="navbar__category-text">All Categories</span>
-            <img src="/arrow-down (1).svg" alt="Expand" className="navbar__category-arrow" />
-          </div>
+          <div className="navbar__container">
+            <button className="navbar__mobile-toggle" onClick={handleMenuToggle}>
+              <img src="/category-2.svg" alt="Menu" />
+            </button>
 
-          <div className="navbar__links-group">
-            <a href="#" className="navbar__link">
-              Today's Deals
-            </a>
-            <a href="#" className="navbar__link">
-              Brand Store
-            </a>
-            <a href="#" className="navbar__link">
-              Electronics
-            </a>
-            <a href="#" className="navbar__link">
-              Home & Kitchen
-            </a>
-            <a href="#" className="navbar__link">
-              Fashion
-            </a>
-            <a href="#" className="navbar__link">
-              Baby & Toys
-            </a>
-            <a href="#" className="navbar__link">
-              Beauty Care
-            </a>
+            <button className="navbar__categories">
+              <img src="/category-2.svg" alt="Categories" />
+              <span>All Categories</span>
+              <img src="/arrow-down.svg" alt="Expand categories" />
+            </button>
+
+            <div className="navbar__links">
+              <a href="#">Today's Deals</a>
+              <a href="#">Brand Store</a>
+              <a href="#">Electronics</a>
+              <a href="#">Home & Kitchen</a>
+              <a href="#">Fashion</a>
+              <a href="#">Baby & Toys</a>
+              <a href="#">Beauty Care</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile menu */}
+        <div className={`navbar__mobile-menu ${menuOpen ? "active" : ""}`}>
+          <button className="navbar__mobile-close" onClick={handleMenuToggle}>
+            ✖ Close
+          </button>
+          <div className="navbar__mobile-links">
+            <a href="#">Today's Deals</a>
+            <a href="#">Brand Store</a>
+            <a href="#">Electronics</a>
+            <a href="#">Home & Kitchen</a>
+            <a href="#">Fashion</a>
+            <a href="#">Baby & Toys</a>
+            <a href="#">Beauty Care</a>
           </div>
         </div>
       </div>
