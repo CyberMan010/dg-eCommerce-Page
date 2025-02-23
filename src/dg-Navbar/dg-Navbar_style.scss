@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 .navbar {
     position: absolute;
     width: 1920px;
@@ -19,9 +20,12 @@
       height: 36px;
       left: 129px;
       top: 14px;
+      cursor: pointer;
     }
   
     &__location {
+      cursor: pointer;
+      font-family: "Almarai", serif;
       position: absolute;
       width: 155px;
       height: 24px;
@@ -38,8 +42,9 @@
   
       &-text {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         font-size: 14px;
+        gap: 4px;
   
         span {
           opacity: 0.8;
@@ -63,12 +68,15 @@
       overflow: hidden;
   
       &-select {
+        font-family: "Almarai", serif;
         padding: 0 16px;
         display: flex;
         align-items: center;
         gap: 8px;
         border-right: 1px solid #eee;
         color: #333;
+        cursor: pointer;
+        background-color: #EAEAEA;
         
         span {
           font-size: 14px;
@@ -81,6 +89,7 @@
       }
   
       &-input {
+        font-family: "Almarai", serif;
         flex: 1;
         height: 100%;
         border: none;
@@ -107,6 +116,7 @@
     }
   
     &__language {
+      font-family: "Almarai", serif;
       position: absolute;
       width: 74px;
       height: 24px;
@@ -127,6 +137,7 @@
     }
   
     &__auth {
+        font-family: "Almarai", serif;
       position: absolute;
       width: 135px;
       height: 24px;
@@ -196,6 +207,107 @@
       font-size: 10px;
       color: #752157;
     }
+    
+    &__bottom {
+        position: absolute;
+        width: 1920px;
+        height: 44px;
+        left: 0;
+        top: 65px;
+        background: #611445;
+        display: flex;
+        align-items: center;
+      }
+    
+      &__category-button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-left: 129px;
+        height: 100%;
+      }
+    
+      &__category-icon {
+        width: 24px;
+        height: 24px;
+      }
+    
+      &__category-text {
+        margin-left: 15px;
+        font-family: 'Almarai';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        width: 93px;
+      }
+    
+      &__category-arrow {
+        width: 18px;
+        height: 18px;
+        margin-left: 21px;
+      }
+    
+      &__links-group {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        margin-left: 62px; // Distance from category button
+        gap: 24px; // Space between links
+      }
+    
+      &__link {
+        font-family: 'Almarai';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        text-decoration: none;
+        height: 40px;
+        white-space: nowrap;
+    
+        &:nth-child(1) { // Today's Deals
+          width: 86px;
+        }
+    
+        &:nth-child(2) { // Brand Store
+          width: 73px;
+        }
+    
+        &:nth-child(3) { // Electronics
+          width: 68px;
+        }
+    
+        &:nth-child(4) { // Home & Kitchen
+          width: 98px;
+        }
+    
+        &:nth-child(5) { // Fashion
+          width: 49px;
+        }
+    
+        &:nth-child(6) { // Baby & Toys
+          width: 76px;
+        }
+    
+        &:nth-child(7) { // Beauty Care
+          width: 76px;
+        }
+      }
+    
+      @media (max-width: 1920px) {
+        &__bottom {
+          width: 100%;
+        }
+      }
   
     @media (max-width: 1920px) {
       width: 100%;
