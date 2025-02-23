@@ -61,11 +61,11 @@ export const DgNavbar = () => {
           </button>
         </div>
 
-        {/* New bottom navbar section */}
+        {/* bottom navbar section */}
         <div className="navbar__bottom">
           <div className="navbar__container">
             <button className="navbar__mobile-toggle" onClick={handleMenuToggle}>
-              <img src="/category-2.svg" alt="Menu" />
+              <img src="/arrow-right.svg" alt="Menu" />
             </button>
 
             <button className="navbar__categories">
