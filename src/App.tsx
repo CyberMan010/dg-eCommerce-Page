@@ -1,17 +1,19 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { DgNavbar } from './dg-Navbar/dg-Navbar'
 import './App.scss';
 import { DgCarousel } from "./dg-Carousel/dg-Carousel";
+import { DgToolsbar } from './dg-Toolsbar/dg-Toolsbar';
 
 function App() {
 
   return (
-    <Router>
+    <div>
     <div className="App">
       <DgNavbar />
     <DgCarousel />
+    <DgToolsbar />
     </div>
-  </Router>
+    </div>
+  
   )
 }
 
