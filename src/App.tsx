@@ -3,6 +3,7 @@ import './App.scss';
 import { DgCarousel } from "./dg-Carousel/dg-Carousel";
 import { DgToolsbar } from './dg-Toolsbar/dg-Toolsbar';
 import { DgCardFramer } from './dg-Card/dg-CardsFramer';
+import { DgBanner } from './dg-Banner/dg-Banner';
 
 
 //
@@ -60,6 +61,7 @@ function App() {
     <DgCarousel />
     <DgToolsbar />
     <DgCardFramer products={products} />
+    <DgBanner />
    
     </div>
     </div>
