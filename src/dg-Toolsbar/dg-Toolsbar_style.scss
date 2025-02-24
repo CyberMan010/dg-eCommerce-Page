@@ -10,6 +10,7 @@
     position: absolute;
     left: 651px;
     top: 553px;
+    z-index: 10000;
   
     &__group {
       display: flex;
